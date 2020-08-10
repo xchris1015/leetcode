@@ -3,7 +3,7 @@ package DFS.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class validateParenthesis {
+public class ValidateParenthesis {
     public List<String> generateParenthesis(int n) {
         if (n < 1) {
             return new ArrayList<>();
