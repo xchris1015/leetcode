@@ -29,7 +29,9 @@ public class PascalTriangle {
         return prev;
     }
 
-    // by using one list and set!!!!! from left to right.
+    //TODO
+
+    // by using one list and set!!!!! from left to right./
 
 //    public List<Integer> getRow(int rowIndex) {
 //        List<Integer> row =
