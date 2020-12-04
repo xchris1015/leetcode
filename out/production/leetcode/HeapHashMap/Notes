@@ -1,0 +1,18 @@
+Heap
+    1. heap have min/ max heap
+    2. heap is always an complete tree!!! which we can use index to find parent or child
+    3. but we can only access top node which is the min or max
+    4. insert pop get update
+        i. heapify O(n), will explain later on this page
+        ii. insert O(logn) because when every a node insert to the heap, it will start on the last node position and
+            track back to the position it should be, and the height is max logn
+        iii. delete O(logn) why delete logn //TODO
+        iv. update = delete + insert
+        v. get O(1) only get the top node
+    5. similar to 2, we can find the parent or child in O(1)
+        Give current index x;
+        Parent = (x - 1) / 2;
+        Child1 = 2x + 1;
+        Child2 = 2x + 2;
+
+
