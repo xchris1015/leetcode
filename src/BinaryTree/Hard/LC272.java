@@ -71,8 +71,6 @@ public class LC272 {
 
     }
 
-
-
     private void initalStack(Stack<TreeNode> left, Stack<TreeNode> right, TreeNode root, double target) {
 
         TreeNode current = root;

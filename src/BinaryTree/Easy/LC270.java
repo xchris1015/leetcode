@@ -88,5 +88,14 @@ public class LC270 {
 
     //TreeSet higher
 
+    public static void main(String[] args) {
 
+        int[][] result = new int[5][];
+        for (int i = 0 ; i < 5 ; i++ ) {
+                result[i] = new int[i];
+        }
+
+
+        System.out.println(result);
+    }
 }

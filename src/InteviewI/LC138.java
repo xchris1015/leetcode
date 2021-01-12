@@ -127,7 +127,10 @@ public class LC138 {
 ////    }
 
     // three pass with O1 space, use odd and even node, prev and current //TODO
-
+    // 奇偶位置
+    // first pass: 1 1' 2 2' 3 3' 4 4'
+    // second pass: update forward, cur.next.forward = cur.forward.next;
+    // third pass : break the odd and even
     public Node copyRandomList(Node head) {
 
         if (head == null) {
