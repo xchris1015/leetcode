@@ -1,6 +1,12 @@
 package String.easy;
 
 public class StrStr {
+    // improve :
+    // cache s1, s2 .length()
+    // what if we have mutiple result?
+    // how about LinkedList head as input?
+    // check subTree?
+
 
     public int strStr(String haystack, String needle) {
 
@@ -33,5 +39,12 @@ public class StrStr {
 
         return true;
     }
+
+    // TODO inprovment to O(n + m), use hash and sliding window to check if the m and n
+    // but might have overflow if we use hash,
+    // to semi-avoid this condition, we could partition to several strings,
+    // but this will also increase the O to n*m
+
+    //improve KMP
 
 }
