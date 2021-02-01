@@ -1,4 +1,4 @@
-package DP.easy;
+package DP.medium;
 
 public class HouseRobber {
 

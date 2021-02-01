@@ -6,6 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LC95 {
+
+    // need to careful for the base case, because start > end, we will return null
+    // branch: each node could have n size of branch for each element
+    // status: start, end
+    // TC : n^n because n branch hight n
+
+    // if ask for count, return count of numbers
+    // able to do pruning because there is redudent calculation
+
     public List<TreeNode> generateTrees(int n) {
 
         if (n <= 0) {

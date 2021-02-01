@@ -26,6 +26,31 @@ public class MaximumProductSubArray {
 //
 //    }
 
+//    public int maxProduct(int[] nums) {
+//        // two d array with max and min value and keep update max
+//
+//        // max[i] = max(nums[i], nums[i]*max[i - 1], nums[i]*min[i - 1]);
+//        // min[i] = min(nums[i], nums[i]*min[i - 1], nums[i]*min[i - 1]);
+//        //dp[i] = max(max[i], min[i], dp[i - 1]);
+//        int[] max = new int[nums.length];
+//        int[] min = new int[nums.length];
+//        int[] dp = new int[nums.length];
+//        max[0] = nums[0];
+//        min[0] = nums[0];
+//        dp[0] = nums[0];
+//
+//        for (int i = 1 ; i < nums.length ; i++ ) {
+//            max[i] = Math.max(nums[i], Math.max(nums[i] * max[i - 1], nums[i] * min[i - 1]));
+//
+//            min[i] = Math.min(nums[i], Math.min(nums[i] * max[i - 1], nums[i] * min[i - 1]));
+//
+//            dp[i] = Math.max(max[i], min[i]);
+//            dp[i] = Math.max(dp[i], dp[i - 1]);
+//        }
+//
+//        return dp[nums.length - 1];
+//    }
+
     // O1 space
     public int maxProduct(int[] nums) {
         // need to thinking about 0 and negative number clearifty before start
