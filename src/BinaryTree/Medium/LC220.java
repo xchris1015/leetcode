@@ -79,7 +79,7 @@ public class LC220 {
         return false;
     }
 
-
+    //Sliding window 应该先踢出去，不然如果先进来直接初结果就不符合题意了。
 //    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
 //        if (nums == null || nums.length == 0) {
 //            return false;

@@ -26,17 +26,35 @@ public class LC285 {
 //    }
 
     // restrict Successor, need to check p exist in the tree
-    // TODO
+    // TODO use stack or prev and cur
 
-     // binary tree Successor
-//     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
-//        if (root == null || p == null) {
-//            return null;
-//        }
-//
-//        Stack<TreeNode> stack = new Stack<>();
-//
-//
-//    }
+    //binary tree Successor
+    private TreeNode prev = null;
+    private TreeNode result;
+    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
+        if (root == null || p == null) {
+            return null;
+        }
+        result = root;
+        dfs(root, p);
+        return result;
+    }
+
+    private void dfs(TreeNode root, TreeNode p) {
+         if (root == null) {
+             return;
+         }
+
+         dfs(root.left, p);
+
+         if (prev == p) {
+             result = root;
+             return;
+         }
+
+         prev = root;
+
+         dfs(root.right, p);
+    }
 
 }
