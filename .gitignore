@@ -25,3 +25,4 @@ hs_err_pid*
 .idea/
 Leetcode.iml
 out/
+src/leetcode/editor/en/doc/
